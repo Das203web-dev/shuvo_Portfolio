@@ -1,3 +1,9 @@
+// var backButton = document.getElementById("backButton");
+
+// backButton.addEventListener("click", function () {
+//     history.back();
+// });
+
 // toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');

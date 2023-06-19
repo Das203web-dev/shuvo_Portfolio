@@ -262,7 +262,7 @@ section {
 
 .home-img-hover:hover {
     background: var(--bg-color);
-    opacity: .5;
+    opacity: .2;
 }
 
 .about {
@@ -538,6 +538,73 @@ span {
     width: 10%;
 }
 
+.projects {
+    height: auto;
+    padding-bottom: 7rem;
+    background: var(--second-bg-color);
+    /* text-align: center; */
+}
+
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.projects-content .projects-image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.projects-content .project-image {
+    width: 570px;
+    height: 35rem;
+    overflow: auto;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    scrollbar-width: none;
+    border: .2rem solid var(--main-color);
+    padding: 2rem;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+}
+
+.projects-content .project-image::-webkit-scrollbar {
+    display: none;
+}
+
+.projects-content .project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projects-image-container p {
+    margin-bottom: 10px;
+}
+
+.projects-image-container p a i {
+    border: 2px solid var(--main-color);
+    border-radius: .6rem;
+    padding: .3rem;
+    margin-left: 5px;
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.projects-details {
+    max-width: 100%;
+}
+
+.projects-details h2,
+h3 {
+    /* text-align: center; */
+    margin-bottom: 1.6rem;
+    font-size: 3rem;
+}
+
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
@@ -688,6 +755,55 @@ span {
         padding: 0 4%;
     }
 
+    .projects {
+        height: auto;
+        padding-bottom: 7rem;
+        background: var(--second-bg-color);
+        position: relative;
+        /* text-align: center; */
+    }
+
+    .projects-content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-content .projects-image-container {
+        width: 60%;
+        height: auto;
+    }
+
+    .projects-content .project-image {
+        max-width: 100%;
+    }
+
+    .projects-content .project-image::-webkit-scrollbar {
+        display: none;
+    }
+
+    .projects-content .project-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .projects-details {
+        width: 100%;
+    }
+
+    .projects-details h2,
+    h3 {
+        margin-top: 1.6rem;
+        font-size: 1.5rem;
+    }
+
+    .projects-details p {
+        font-size: 65%;
+        width: 100%;
+    }
+
     .footer {
         padding: 2rem 4%;
     }
@@ -741,19 +857,61 @@ span {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-        /* transform: translateX(-20rem);
-        transition: .25s ease;
-        transition-delay: 0s; */
     }
 
-    /* .navbar .active a {
-        transform: translateX(0);
-        transition-delay: .25s;
-    } */
     .home-img-hover {
         pointer-events: none;
         background: var(--bg-color);
-        opacity: .6;
+        opacity: .2;
+    }
+
+    .projects {
+        height: auto;
+        padding-bottom: 7rem;
+        background: var(--second-bg-color);
+        position: relative;
+        /* text-align: center; */
+    }
+
+    .projects-content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-content .projects-image-container {
+        width: 60%;
+        height: auto;
+    }
+
+    .projects-content .project-image {
+        max-width: 100%;
+    }
+
+    .projects-content .project-image::-webkit-scrollbar {
+        display: none;
+    }
+
+    .projects-content .project-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .projects-details {
+        width: 100%;
+    }
+
+    .projects-details h2,
+    h3 {
+        margin-top: 1.6rem;
+        font-size: 1.5rem;
+    }
+
+    .projects-details p {
+        font-size: 60%;
+        width: 100%;
     }
 }
 
@@ -774,6 +932,23 @@ span {
     .home-sci a {
         width: 38px;
         height: 38px;
+    }
+
+    .projects-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-content .projects-image-container .project-image {
+        width: 100%;
+    }
+
+    /* .projects-image-container .project-image {
+        width: 100%;
+    } */
+
+    .project-image img {
+        width: 100%;
     }
 }
 
