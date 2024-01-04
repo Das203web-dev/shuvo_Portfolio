@@ -507,11 +507,11 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 60%;
+    width: 30%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 50%;
+    width: 70%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
@@ -519,23 +519,23 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 10%;
+    width: 60%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 90%;
+    width: 70%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 50%;
+    width: 60%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 30%;
+    width: 40%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 10%;
+    width: 50%;
 }
 
 .projects {
@@ -550,6 +550,7 @@ span {
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
+    margin-bottom: 20px;
 }
 
 .projects-content .projects-image-container {
@@ -559,7 +560,7 @@ span {
 }
 
 .projects-content .project-image {
-    width: 570px;
+    width: 100%;
     height: 35rem;
     overflow: auto;
     scroll-behavior: smooth;
@@ -595,14 +596,15 @@ span {
 }
 
 .projects-details {
-    max-width: 100%;
+    width: 100%;
+    font-size: 14px;
 }
 
 .projects-details h2,
 h3 {
     /* text-align: center; */
     margin-bottom: 1.6rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .contact {
